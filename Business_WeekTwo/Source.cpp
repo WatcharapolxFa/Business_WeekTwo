@@ -34,32 +34,35 @@ double Space_Laundry(double sumSpace)
 
 int main()
 {
+    struct area
+    {
+        double sumArea = 0, ashing_machine = 0, Dryingg_machine = 0, Space = 0, Washing_machine = 0;
+        double wl[2];
+        char str[30];
+    }Laundry;
 
-    double sumArea = 0 ,  ashing_machine = 0, Dryingg_machine = 0, Space = 0 , Washing_machine=0;
-    double wl[2];
-    char str[30];
     printf(" Please specify name : ");
-    gets_s(str);
-    
+    gets_s(Laundry.str);
+
 
 
 
     printf("Please specify a width :");
-    if (scanf_s("%lf", &wl[0]))
+    if (scanf_s("%lf", &Laundry.wl[0]))
     {
         printf("Please specify a legth :");
-        if (scanf_s("%lf", &wl[1]))
+        if (scanf_s("%lf", &Laundry.wl[1]))
         {
-            sumArea = AreaRectangle(wl[0], wl[1]);
-            Washing_machine = Washingmachine(sumArea);
-            Dryingg_machine = Dryingmachine(Washing_machine);
-            Space = Space_Laundry(sumArea);
-            printf("\t\t\t\t Hi \t %s \t welcome to Laundry112  \n", str);
-            printf("\t\t\t\t -------------------------------------------  \n", str);
-            printf(" \t\t\t\t-- Ans >> AreaRectangle  = %.2lf Square meter -- \n", sumArea);
-            printf(" \t\t\t\t-- Ans >> Washingmachine  = %.2lf   \n", Washing_machine);
-            printf(" \t\t\t\t-- Ans >> Dryingmachine  = %.2lf \n", Dryingg_machine);
-            printf(" \t\t\t\t-- Ans >> Space  = %.2lf \n", Space);
+            Laundry.sumArea = AreaRectangle(Laundry.wl[0], Laundry.wl[1]);
+            Laundry.Washing_machine = Washingmachine(Laundry.sumArea);
+            Laundry.Dryingg_machine = Dryingmachine(Laundry.Washing_machine);
+            Laundry.Space = Space_Laundry(Laundry.sumArea);
+            printf("\t\t\t\t Hi \t %s \t welcome to Laundry112  \n", Laundry.str);
+            printf("\t\t\t\t -------------------------------------------  \n");
+            printf(" \t\t\t\t-- Ans >> AreaRectangle  = %.2lf Square meter -- \n", Laundry.sumArea);
+            printf(" \t\t\t\t-- Ans >> Washingmachine  = %.2lf   \n", Laundry.Washing_machine);
+            printf(" \t\t\t\t-- Ans >> Dryingmachine  = %.2lf \n", Laundry.Dryingg_machine);
+            printf(" \t\t\t\t-- Ans >> Space  = %.2lf \n", Laundry.Space);
         }
         else
         {
