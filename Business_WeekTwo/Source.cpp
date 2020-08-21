@@ -34,8 +34,7 @@ double Space_Laundry(double sumSpace)
 
 int main()
 {
-    double sumArea = 0;
-    double width = 0;
+    double sumArea = 0 , width = 0;
     double legth = 0;
     double Washing_machine = 0;
     double Dryingg_machine = 0;
@@ -43,7 +42,7 @@ int main()
     char str[50];
     printf(" Please specify name : ");
     gets_s(str);
-    printf("Hi \t %s \t welcome to Laundry112  \n", str);
+    
 
 
 
@@ -57,6 +56,8 @@ int main()
             Washing_machine = Washingmachine(sumArea);
             Dryingg_machine = Dryingmachine(Washing_machine);
             Space = Space_Laundry(sumArea);
+            printf("\t\t\t\t Hi \t %s \t welcome to Laundry112  \n", str);
+            printf("\t\t\t\t -------------------------------------------  \n", str);
             printf(" \t\t\t\t-- Ans >> AreaRectangle  = %.2lf Square meter -- \n", sumArea);
             printf(" \t\t\t\t-- Ans >> Washingmachine  = %.2lf   \n", Washing_machine);
             printf(" \t\t\t\t-- Ans >> Dryingmachine  = %.2lf \n", Dryingg_machine);
