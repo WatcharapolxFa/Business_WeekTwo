@@ -34,12 +34,10 @@ double Space_Laundry(double sumSpace)
 
 int main()
 {
-    double sumArea = 0 , width = 0;
-    double legth = 0;
-    double Washing_machine = 0;
-    double Dryingg_machine = 0;
-    double Space = 0;
-    char str[50];
+
+    double sumArea = 0 ,  ashing_machine = 0, Dryingg_machine = 0, Space = 0 , Washing_machine=0;
+    double wl[2];
+    char str[30];
     printf(" Please specify name : ");
     gets_s(str);
     
@@ -47,12 +45,12 @@ int main()
 
 
     printf("Please specify a width :");
-    if (scanf_s("%lf", &width))
+    if (scanf_s("%lf", &wl[0]))
     {
         printf("Please specify a legth :");
-        if (scanf_s("%lf", &legth))
+        if (scanf_s("%lf", &wl[1]))
         {
-            sumArea = AreaRectangle(width, legth);
+            sumArea = AreaRectangle(wl[0], wl[1]);
             Washing_machine = Washingmachine(sumArea);
             Dryingg_machine = Dryingmachine(Washing_machine);
             Space = Space_Laundry(sumArea);
