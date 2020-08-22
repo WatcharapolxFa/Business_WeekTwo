@@ -6,12 +6,20 @@
 
 
 
-int Washing_machine_cost(double cost)
+int Washing_machine_cost(int cost)
 {
     int sum_cost = 0;
     sum_cost = cost * 9000;
     return sum_cost;
 }
+
+int Drying_machine_cost(int drying)
+{
+    int sum_drying = 0;
+    sum_drying = drying * 10000;
+    return sum_drying;
+}
+
 double AreaRectangle(double w, double l)
 {
     double sum = 0;
@@ -72,6 +80,7 @@ int main()
             Laundry.Dryingg_machine = Dryingmachine(Laundry.Washing_machine);
             Laundry.Space = Space_Laundry(Laundry.sumArea);
             profit.laundry_price = Washing_machine_cost(Laundry.Washing_machine);
+            profit.dryingg_price = Drying_machine_cost (Laundry.Dryingg_machine);
 
 
             printf("\t\t\t\t Hi \t %s \t welcome to Laundry112  \n", Laundry.str);
@@ -82,6 +91,8 @@ int main()
             printf(" \t\t\t\t-- Ans >> Space  = %.2lf \n", Laundry.Space);
             printf("\t\t\t\t -------------------------------------------  \n");
             printf(" \t\t\t\t-- Ans >> Washing machine cost  = %d B.\n", profit.laundry_price);
+            printf(" \t\t\t\t-- Ans >> Spinning machine cost  = %d B.\n", profit.dryingg_price);
+
 
         }
         else
