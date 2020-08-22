@@ -1,8 +1,5 @@
 #include<stdio.h>
 #define _CRT_SECURE_NO_WARNINGS
-
-
-
 double AreaRectangle(double w, double l)
 {
     double sum = 0;
@@ -68,6 +65,7 @@ int main()
             printf(" \t\t\t\t-- Ans >> Washingmachine  = %.2lf   \n", Laundry.Washing_machine);
             printf(" \t\t\t\t-- Ans >> Dryingmachine  = %.2lf \n", Laundry.Dryingg_machine);
             printf(" \t\t\t\t-- Ans >> Space  = %.2lf \n", Laundry.Space);
+            printf("\t\t\t\t -------------------------------------------  \n");
         }
         else
         {
