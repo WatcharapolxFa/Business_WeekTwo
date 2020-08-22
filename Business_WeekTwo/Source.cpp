@@ -69,16 +69,16 @@ int main()
     }profit;
 
 
-    printf(" Please specify name : ");
+    printf(" \t\t\tIntput\n\t\t\t\t Please specify name : ");
     gets_s(Laundry.str);
 
 
 
 
-    printf("Please specify a width :");
+    printf("\t\t\t\t Please specify a width :");
     if (scanf_s("%lf", &Laundry.wl[0]))
     {
-        printf("Please specify a legth :");
+        printf("\t\t\t\t Please specify a legth :");
         if (scanf_s("%lf", &Laundry.wl[1]))
         {
             Laundry.sumArea = AreaRectangle(Laundry.wl[0], Laundry.wl[1]);
@@ -94,8 +94,8 @@ int main()
             printf("\t\t\t\t Hi \t %s \t welcome to Laundry112  \n", Laundry.str);
             printf("\t\t\t\t -------------------------------------------  \n");
             printf(" \t\t\t\t-- Ans >> AreaRectangle  = %.2lf Square meter -- \n", Laundry.sumArea);
-            printf(" \t\t\t\t-- Ans >> Washingmachine  = %.2lf   \n", Laundry.Washing_machine);
-            printf(" \t\t\t\t-- Ans >> Dryingmachine  = %.2lf \n", Laundry.Dryingg_machine);
+            printf(" \t\t\t\t-- Ans >> Washingmachine  = %.lf   \n", Laundry.Washing_machine);
+            printf(" \t\t\t\t-- Ans >> Dryingmachine  = %.lf \n", Laundry.Dryingg_machine);
             printf(" \t\t\t\t-- Ans >> Space  = %.2lf \n", Laundry.Space);
             printf("\t\t\t\t -------------------------------------------  \n");
             printf(" \t\t\t\t-- Ans >> Washing machine cost  = %d B.\n", profit.laundry_price);
