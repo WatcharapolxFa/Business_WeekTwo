@@ -40,6 +40,11 @@ int main()
         double wl[2];
         char str[30];
     }Laundry;
+    struct Business
+    {
+
+    }profit;
+
 
     printf(" Please specify name : ");
     gets_s(Laundry.str);
