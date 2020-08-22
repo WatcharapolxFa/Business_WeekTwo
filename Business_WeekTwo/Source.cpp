@@ -39,7 +39,7 @@ int main()
     }Laundry;
     struct Business
     {
-
+        double laundry_price = 0 , Dryingg_price = 0 ;
     }profit;
 
 
@@ -66,6 +66,7 @@ int main()
             printf(" \t\t\t\t-- Ans >> Dryingmachine  = %.2lf \n", Laundry.Dryingg_machine);
             printf(" \t\t\t\t-- Ans >> Space  = %.2lf \n", Laundry.Space);
             printf("\t\t\t\t -------------------------------------------  \n");
+
         }
         else
         {
