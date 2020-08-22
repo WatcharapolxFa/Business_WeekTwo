@@ -1,11 +1,11 @@
 #include<stdio.h>
 #define _CRT_SECURE_NO_WARNINGS
 
-int Cost(int cost_washing , int cost_drying)
+int sum_Cost(int cost_washing , int cost_drying)
 {
-    int avg_costt = 0;
-    int avg_costt = cost_washing + cost_drying;
-    return avg_costt;
+    int Fah = 0;
+    Fah = cost_washing + cost_drying;
+    return Fah;
 
 }
 
@@ -65,7 +65,7 @@ int main()
     }Laundry;
     struct Business
     {
-        int laundry_price = 0 , dryingg_price = 0 ,sum_Cost=0;
+        int laundry_price = 0 , dryingg_price = 0 ,avg_Cost= 0 ;
     }profit;
 
 
@@ -87,7 +87,7 @@ int main()
             Laundry.Space = Space_Laundry(Laundry.sumArea);
             profit.laundry_price = Washing_machine_cost(Laundry.Washing_machine);
             profit.dryingg_price = Drying_machine_cost (Laundry.Dryingg_machine);
-            profit.sum_Cost = Cost(profit.laundry_price , profit.dryingg_price);
+            profit.avg_Cost = sum_Cost(profit.laundry_price , profit.dryingg_price);
 
 
 
@@ -100,7 +100,7 @@ int main()
             printf("\t\t\t\t -------------------------------------------  \n");
             printf(" \t\t\t\t-- Ans >> Washing machine cost  = %d B.\n", profit.laundry_price);
             printf(" \t\t\t\t-- Ans >> Spinning machine cost  = %d B.\n", profit.dryingg_price);
-            printf(" \t\t\t\t-- Ans >> Sum cost  = %d B.\n", profit.sum_Cost);
+            printf(" \t\t\t\t-- Ans >> Sum cost  = %d B.\n", profit.avg_Cost);
 
 
 
