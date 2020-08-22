@@ -4,7 +4,7 @@
 int sum_Cost(int cost_washing , int cost_drying)
 {
     int Fah = 0;
-    Fah = cost_washing + cost_drying;
+    Fah = (cost_washing + cost_drying)+75000;
     return Fah;
 
 }
@@ -90,7 +90,7 @@ int main()
             profit.avg_Cost = sum_Cost(profit.laundry_price , profit.dryingg_price);
 
 
-
+            printf("\t\t\tOutput\n\t\t\t\t -------------------------------------------  \n");
             printf("\t\t\t\t Hi \t %s \t welcome to Laundry112  \n", Laundry.str);
             printf("\t\t\t\t -------------------------------------------  \n");
             printf(" \t\t\t\t-- Ans >> AreaRectangle  = %.2lf Square meter -- \n", Laundry.sumArea);
