@@ -1,5 +1,17 @@
 #include<stdio.h>
 #define _CRT_SECURE_NO_WARNINGS
+
+
+
+
+
+
+int Washing_machine_cost(double cost)
+{
+    int sum_cost = 0;
+    sum_cost = cost * 9000;
+    return sum_cost;
+}
 double AreaRectangle(double w, double l)
 {
     double sum = 0;
@@ -39,7 +51,7 @@ int main()
     }Laundry;
     struct Business
     {
-        double laundry_price = 0 , Dryingg_price = 0 ;
+        int laundry_price = 0 , dryingg_price = 0 ;
     }profit;
 
 
@@ -59,6 +71,9 @@ int main()
             Laundry.Washing_machine = Washingmachine(Laundry.sumArea);
             Laundry.Dryingg_machine = Dryingmachine(Laundry.Washing_machine);
             Laundry.Space = Space_Laundry(Laundry.sumArea);
+            profit.laundry_price = Washing_machine_cost(Laundry.Washing_machine);
+
+
             printf("\t\t\t\t Hi \t %s \t welcome to Laundry112  \n", Laundry.str);
             printf("\t\t\t\t -------------------------------------------  \n");
             printf(" \t\t\t\t-- Ans >> AreaRectangle  = %.2lf Square meter -- \n", Laundry.sumArea);
@@ -66,6 +81,7 @@ int main()
             printf(" \t\t\t\t-- Ans >> Dryingmachine  = %.2lf \n", Laundry.Dryingg_machine);
             printf(" \t\t\t\t-- Ans >> Space  = %.2lf \n", Laundry.Space);
             printf("\t\t\t\t -------------------------------------------  \n");
+            printf(" \t\t\t\t-- Ans >> Washing machine cost  = %d B.\n", profit.laundry_price);
 
         }
         else
