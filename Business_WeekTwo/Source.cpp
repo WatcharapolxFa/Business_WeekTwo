@@ -101,7 +101,7 @@ int main()
             printf(" \t\t\t\t-- Ans >> Washing machine cost  = %d B.\n", profit.laundry_price);
             printf(" \t\t\t\t-- Ans >> Spinning machine cost  = %d B.\n", profit.dryingg_price);
             printf(" \t\t\t\t-- Ans >> Sum cost  = %d B.\n", profit.avg_Cost);
-
+            printf("\t\t\t\t\t ----- End Program. ----- \n ");
 
 
 
